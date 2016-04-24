@@ -9,7 +9,7 @@
 <title>Welcome</title>
 </head>
 <body>
-Bienvenido admin!!
+Bienvenido <%=request.getSession().getAttribute("USERNAME")%>!!
 
 </body>
 </html>

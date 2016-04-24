@@ -7,6 +7,6 @@
 	
     <tag>
     	<name>isLogged</name>
-        <tag-class>edu.ucam.tags.SecurityTag</tag-class>        
+        <tag-class>com.rlp.tags.SecurityTag</tag-class>        
     </tag>
 </taglib>

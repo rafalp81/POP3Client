@@ -7,6 +7,15 @@
 <title>Welcome</title>
 </head>
 <body>
+<%
+
+	String mensaje = (String)request.getAttribute("MSG");
+	if (mensaje != null){
+		out.println(mensaje);
+		out.print("<br>");
+	}
+%>
+
 Bienvenido, haga login<br/>
 
 <form action="Control?ACTION_ID=LOGIN" method="post">
@@ -16,14 +25,8 @@ Bienvenido, haga login<br/>
 
 </form>
 
-<br/>
-<%
-
-	String error = (String)request.getAttribute("ERROR_MSG");
-	if (error != null){
-		out.println(error);
-	}
-%>
+<br>
+<a href="registro.jsp">Registrarse</a>
 
 </body>
 </html>
